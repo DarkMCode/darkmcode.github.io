@@ -1,0 +1,70 @@
+/* Couleurs sombres apaisantes */
+:root {
+  --bg: #0f0f0f;
+  --text: #e0e0e0;
+  --accent: #00bcd4;
+  --header-bg: #1a1a1a;
+  --footer-bg: #121212;
+  --hover: #26c6da;
+  --font: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-bg);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #333;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 32px;
+  width: auto;
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: var(--hover);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--footer-bg);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
+}
