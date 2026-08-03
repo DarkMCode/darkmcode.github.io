@@ -10,14 +10,16 @@
     <body>
         <div class="wrapper">
             <header class="header"> 
-                <div class="branding"> 
-                    <img src="assets/logos/logo_bleu_name_contr.png" alt="Logo DARKMCODE" class="logo"> 
+                <a href="https://darkmcode.github.io" class="branding"> 
+                    <img src="assets/logos/DarkMCode/logo_rouge_name_low_contr.png" alt="Logo DARKMCODE" class="logo"> 
                     <span class="title">DARKMCODE</span> 
-                </div> 
+                </a> 
 
                 <nav class="nav"> 
+                    <a href="index.html" class="nav-active">Accueil</a>
                     <a href="pages/services.html">Services</a> 
                     <a href="pages/portfolio.html">Portfolio</a> 
+                    <a href="pages/tarifs.html">Tarifs</a>
                     <a href="pages/contact.html">Contact</a>
                     <a href="pages/mentions-legales.html">Mentions légales</a>
                 </nav>     
@@ -25,21 +27,28 @@
 
             <main>
                 <section>
-                    <img src="assets/logos/logo_bleu_name_contr.png" alt="Logo DARKMCODE" class="logo" style="height: 256px; display: block; margin: 0 auto; margin-top: 1rem">
-                    <div class="text spaced" style="margin-top: 2rem">
-                        <p>Spécialiste en analyse de données et cartographie, je conçois des solutions sur mesure pour visualiser, comprendre et exploiter vos données.</p>
+                    <h1 class="title">Création et automatisation de jeux de société sur Tabletop Simulator</h1>
+                    <div class="text spaced">
+                        <p class="intro-box">Scripting, intégration d’assets et conception de systèmes interactifs.
+                        </p>
                     </div>
                     
-                    <div style="display:flex; align-items: flex-start;">
-                        <iframe src="assets/html/map63/map.html" width="40%" height="450" style="border: none; display: block; margin: 0 auto;"></iframe>
-                        <img src="assets/img/graphique.png" alt="Exemple de graphique" style="width: 47.5%; margin: 0 auto">
-                    </div>
+                    <video class="hero-video" autoplay muted loop>
+                        <source src="assets/videos/Script_TTS.mp4" type="video/mp4">
+                    </video>
                 </section>
             </main>
-            
-            <footer class="footer"> 
-                <p>&copy; 2025 DARKMCODE. Tous droits réservés.</p> 
-            </footer>
+
+            <div id="footer"></div>
+
+            <script>
+                fetch("includes/footer.html")
+                .then(r => r.text())
+                .then(html => {
+                    document.getElementById("footer").innerHTML = html;
+                })
+            </script>
         </div>
+
     </body>
 </html>
