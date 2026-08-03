@@ -4,22 +4,21 @@
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>Services – DARKMCODE</title>
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style.css"> 
     </head>
 
     <body>
         <div class="wrapper">
             <header class="header"> 
                 <a href="https://darkmcode.github.io" class="branding"> 
-                    <img src="../assets/logos/DarkMCode/logo_rouge_name_low_contr.png" alt="Logo DARKMCODE" class="logo"> 
+                    <img src="../assets/logos/logo_bleu_name.png" alt="Logo DARKMCODE" class="logo"> 
                     <span class="title">DARKMCODE</span> 
                 </a> 
 
                 <nav class="nav">
-                    <a href="../index.html">Accueil</a>
+                    <a href="/index.html">Accueil</a>
                     <a href="services.html" class="nav-active">Services</a> 
                     <a href="portfolio.html">Portfolio</a> 
-                    <a href="tarifs.html">Tarifs</a>
                     <a href="contact.html">Contact</a>
                     <a href="mentions-legales.html">Mentions légales</a>
                 </nav>     
@@ -29,16 +28,14 @@
                 <section>
                     <h1 class="title">Services proposés</h1>
                     <div class="text spaced">
-                        <p>Création de prototypes jouables sur Tabletop Simulator (test rapide d'une idée)</p>
-                        <p>Développement de jeux complets prêts à être joués ou présentés à des éditeurs</p>
-                        <p>Automatisation via scripting (mise en place de partie, comptage des points, etc.)</p>
-                        <p>Création d’interfaces utilisateur (menus, panneaux, systèmes interactifs)</p>
-                        <p>Intégration et organisation d’assets de jeu (cartes, plateaux, modèles 3D)</p>
-                        <p>Préparation et optimisation de contenus visuels pour l’intégration</p>
-                        <p>Création et intégration de figurines 3D adaptées à Tabletop Simulator</p>
-                        <p>Développement de systèmes audio (effets sonores, ambiance, musique intégrée)</p>
-                        <p>Mise en place d’audio dynamique réagissant aux actions en jeu</p>
-                        <p>Correction, ajustement et amélioration de projets existants</p>
+                        <p>Analyse statistique et traitement de données complexes</p>
+                        <p>Visualisation graphique de données techniques</p>
+                        <p>Nettoyage, structuration et extraction de données brutes</p>
+                        <p>Cartographie thématique et géospatiale</p>
+                        <p>Production de cartes interactives ou statiques</p>
+                        <p>Intégration de données géographiques (SIG, shapefiles, etc.)</p>
+                        <p>Création de rapports visuels en PDF ou HTML pour publications ou livrables clients</p>
+                        <p>Création de modules Tabletop Simulator scriptés => plus de détails <a href="https://darkmcode.github.io/TTS" class="btn">ici</a></p>
                     </div>
                 </section>
             </main>
@@ -46,7 +43,7 @@
             <div id="footer"></div>
 
             <script>
-                fetch("../includes/footer.html")
+                fetch("/includes/footer.html")
                 .then(r => r.text())
                 .then(html => {
                     document.getElementById("footer").innerHTML = html;

@@ -11,15 +11,14 @@
         <div class="wrapper">
             <header class="header"> 
                 <a href="https://darkmcode.github.io" class="branding"> 
-                    <img src="../assets/logos/DarkMCode/logo_rouge_name_low_contr.png" alt="Logo DARKMCODE" class="logo">
+                    <img src="../assets/logos/logo_bleu_name.png" alt="Logo DARKMCODE" class="logo">
                     <span class="title">DARKMCODE</span> 
                 </a>
 
                 <nav class="nav">
-                    <a href="../index.html">Accueil</a>
-                    <a href="services.html">Services</a>
-                    <a href="portfolio.html" class="nav-active">Portfolio</a> 
-                    <a href="tarifs.html">Tarifs</a>
+                    <a href="/index.html">Accueil</a>
+					<a href="services.html">Services</a>
+                    <a href="portfolio.html" class="nav-active">Portfolio</a>
                     <a href="contact.html">Contact</a>
                     <a href="mentions-legales.html">Mentions légales</a>
                 </nav>     
@@ -27,49 +26,34 @@
 
             <main>
                 <section>
-                    <h1 class="title">Portfolio</h1>
-                    
+                    <h2 class="title">Compétences</h2>
                     <div class="text spaced">
-                        <h2 class="portfolio-subtitle">Davelthys — Mod Tabletop Simulator</h2>
-
-                        <div class="project-media">
-                            <img src="../assets/img/Mise_en_place_Davelthys.png" alt="Miniature Davelthys">
-                        </div>
-
-                        <p>Conception du jeu : règles, cartes et composants</p>
-                        <p>Création des graphismes avec assistance IA et post-traitement manuel</p>
-                        <p>Composition des musiques d'ambiance et création des effets sonores</p>
-                        <p>Importation et intégration des assets dans Tabletop Simulator</p>
-                        <p>Développement de systèmes d'automatisation des règles, interactions et mécaniques</p>
-                        <p>Développement de l'interface utilisateur</p>
-                        <p>Développement d’un système de musique dynamique basé sur les interactions en jeu</p>
-
-                        <a class="mod-button button-disabled" href="" target="_blank">
-                            Voir le mod (Prochainement)
-                        </a>
+                        <p><strong>Analyse de données :</strong><br>R, Python – traitement de données, visualisation, graphiques dynamiques</p>
+                        <p><strong>Cartographie technique :</strong><br>R – représentation géographique, visualisation spatiale, intégration de données, outils interactifs</p>
+                        <p><strong>Développement logiciel :</strong><br>Python, Rust, C# – outils d'analyse, applications de bureau, scripts de traitement automatisé</p>
+                        <p><strong>Développement mobile et multiplateformes :</strong><br>GDScript (Godot), C# – UX personnalisée, outils divers</p>
+                        <p><strong>Développement web :</strong><br>Python (Django), HTML/CSS, JavaScript – backend, interfaces interactives, intégrations</p>
+                        <p><strong>Composition musicale :</strong><br>Intégration de musique originale et sound design composés sur mesure</p>
+                        <p><strong>Méthodologies :</strong><br>programmation orientée objet, production-ready, structuration modulaire</p>
                     </div>
+                </section>
 
-                    <br>
-
+                <section>
+                    <h2 class="title">Formation</h2>
                     <div class="text spaced">
-                        <h2 class="portfolio-subtitle">Hero Quest Gravaillon v2.5 — Mod Tabletop Simulator</h2>
+                        <p>Auto-formation intensive – Python, R, Rust, Godot, C#, Lua</p>
+                        <p>DUT G.E.I.I. (génie électrique et informatique industrielle) – 2005, IUT Montluçon</p>
+                        <p>Baccalauréat Scientifique – 2000, Lycée Mme De Staël, Montluçon</p>
+                    </div>
+                </section>
 
-                        <div class="project-media">
-                            <img src="../assets/img/Mise_en_place_HQ.png" alt="Miniature HQ">
-                        </div>
-                        
-                        <p>Mise à jour du Mod de David Dupond</p>
-                        <p>Génération des figurines 3D via IA à partir de visuels existants</p>
-                        <p>Nettoyage, retouches et adaptation des figurines pour Tabletop Simulator</p>
-                        <p>Composition d'une musique d'ambiance</p>
-                        <p>Importation et intégration des assets dans Tabletop Simulator</p>
-                        <p>Développement et amélioration des sytèmes d'automatisation</p>
-                        <p>Développement de commandes personalisées</p>
-                        <p>Adaptation du mod aux règles et à la direction définies par le créateur (Gravaillon)</p>
-
-                        <a class="mod-button" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3568111694" target="_blank">
-                            Voir le mod
-                        </a>
+                <section>
+                    <h2 class="title">Projets</h2>
+                    <div class="text spaced">
+                        <p><strong>Metronome Architect</strong><br>Logiciel de métronome avancé (Godot)</p>
+                        <p><strong><a href="https://dark-muzicos.itch.io/shut-down-setter">Shut Down Setter</a></strong><br>Outil d'extinction automatique de Windows (C#)</p>
+                        <p><strong><a href="https://www.youtube.com/@Dark_G.H.">Dark G.H.</a></strong><br>Compositeur de musique (6 albums)</p>
+                        <p><strong>Hero Quest v2.5 Gravaillon (Lua)</strong><br>Mise à jour d'un mod de Tabletop Simulator</p>
                     </div>
                 </section>
             </main>
@@ -77,7 +61,7 @@
             <div id="footer"></div>
 
             <script>
-                fetch("../includes/footer.html")
+                fetch("/includes/footer.html")
                 .then(r => r.text())
                 .then(html => {
                     document.getElementById("footer").innerHTML = html;

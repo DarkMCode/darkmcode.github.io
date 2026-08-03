@@ -2,12 +2,11 @@
 :root {
   --bg: #0f0f0f;
   --text: #d4cfc9;
-  --accent: #5a2326;
-  --shadow: #26c6da14;
+  /*--accent: #3b1c1e;*/
+  --accent: #0f5250;
   --header-bg: #1a1a1a;
   --footer-bg: #121212;
   --hover: #26c6da;
-  --nav: #8f8380;
   --font: 'Segoe UI', sans-serif;
 }
 
@@ -36,12 +35,11 @@ a:hover {
 /* Header */
 .header {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-color: var(--header-bg);
   padding: 1rem 2rem;
-  border-bottom: 1px solid #ffffff0d;
+  border-bottom: 1px solid #333;
 }
 
 .branding {
@@ -61,26 +59,16 @@ a:hover {
   font-weight: bold;
   color: var(--accent);
   text-align: center;
-  text-shadow: 0 0 10px var(--shadow);
-}
-
-.subtitle {
-    font-family: 'audiowide', sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--accent);
-    text-align: center;
 }
 
 /* Navigation */
 .nav {
   display: flex;
   gap: 2rem;
-  margin-top: 20px;
 }
 
 .nav a {
-  color: var(--nav);
+  color: var(--text);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -96,14 +84,6 @@ a:hover {
     pointer-events: none;
     cursor: default;
 } 
-
-.hero-video {
-    width: 60%;
-    max-width: 800px;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-}
 
 /* Footer */
 .footer {
@@ -131,51 +111,21 @@ a:hover {
 }
 
 .spaced p {
-  margin-bottom: 1.5rem;
-}
-
-.text.spaced:last-of-type {
-    margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
 
 .intro-box {
-  border: 1px solid var(--accent);
+  border: 1px solid #0f5250;
   padding: 20px;
   border-radius: 8px;
   display: inline-block;
-  margin-top: -5px;
-  box-shadow: 0 0 10px var(--shadow);
 }
 
-.portfolio-subtitle {
-    font-size: 1.6rem;
-    color: #c9a3a3;
-}
-
-.tarifs-subtitle {
-    font-size: 1.6rem;
-    color: #c9a3a3;
-}
-
-.project-media {
-    margin: 15px 0;
-    text-align: center;
-}
-
-.project-media img {
-    width: 100%;
-    max-width: 700px;
-    height: auto;
-    display: block;
-    margin: 0 auto 10px auto;
-    border-radius: 6px;
-}
-
-.mod-button {
+.btn {
     display: inline-block;
     padding: 10px 18px;
     margin-top: 10px;
-    background-color: #3b1c1e;
+    background-color: #0f5250;
     color: #d4cfc9;
     text-decoration: none;
     border-radius: 6px;
@@ -183,16 +133,9 @@ a:hover {
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.mod-button:hover {
+.btn:hover {
     opacity: 0.5;
     color: #d4cfc9;
-    transform: translate(1px, 1px);
-}
-
-.button-disabled {
-    pointer-events: none;
-    opacity: 0.25;
-    cursor: default;
 }
 
 main {

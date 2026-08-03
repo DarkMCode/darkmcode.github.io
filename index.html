@@ -11,15 +11,14 @@
         <div class="wrapper">
             <header class="header"> 
                 <a href="https://darkmcode.github.io" class="branding"> 
-                    <img src="assets/logos/DarkMCode/logo_rouge_name_low_contr.png" alt="Logo DARKMCODE" class="logo"> 
+                    <img src="assets/logos/logo_bleu_name.png" alt="Logo DARKMCODE" class="logo"> 
                     <span class="title">DARKMCODE</span> 
                 </a> 
 
-                <nav class="nav"> 
-                    <a href="index.html" class="nav-active">Accueil</a>
+                <nav class="nav">
+                    <a href="/index.html" class="nav-active">Accueil</a>
                     <a href="pages/services.html">Services</a> 
                     <a href="pages/portfolio.html">Portfolio</a> 
-                    <a href="pages/tarifs.html">Tarifs</a>
                     <a href="pages/contact.html">Contact</a>
                     <a href="pages/mentions-legales.html">Mentions légales</a>
                 </nav>     
@@ -27,28 +26,36 @@
 
             <main>
                 <section>
-                    <h1 class="title">Création et automatisation de jeux de société sur Tabletop Simulator</h1>
-                    <div class="text spaced">
-                        <p class="intro-box">Scripting, intégration d’assets et conception de systèmes interactifs.
+                    <img src="assets/logos/logo_bleu_name_contr.png" alt="Logo DARKMCODE" class="logo" style="height: 256px; display: block; margin: 0 auto; margin-top: 1rem">
+                    <div class="text spaced" style="margin-top: 2rem">
+                        <p class="intro-box">Développement d'outils et d'applications sur mesure <br>pour automatiser vos tâches, optimiser vos processus <br>et exploiter pleinement vos données — de leur collecte à leur analyse. 
+                            <br><br>Des solutions logicielles et des visualisations conçues pour apporter des réponses concrètes et adaptées à vos enjeux.
                         </p>
                     </div>
                     
-                    <video class="hero-video" autoplay muted loop>
-                        <source src="assets/videos/Script_TTS.mp4" type="video/mp4">
-                    </video>
+                    <div style="display:flex; align-items: flex-start; justify-content: space-between; gap: 2rem; margin-top: 2rem;">
+                        <div style="width: 54%; margin-left: 2.5%;">
+                            <p style="text-align: center; font-style: italic; margin-bottom: 0.5rem;">Exemple d'analyse géographique d'infrastructures</p>
+                            <iframe src="assets/html/map63/map.html" width="100%" height="450" style="border: none; display: block; margin: 0 auto;"></iframe>
+                        </div>
+
+                        <div style="width: 40%; margin-right: 2.5%">
+                            <p style="text-align: center; font-style: italic; margin-bottom: 0.5rem;">Exemple d'analyse statistique et sociale</p>
+                            <img src="assets/img/graphique.png" alt="Exemple de graphique" style="width: 100%; margin: 0 auto">
+                        </div>
+                    </div>
                 </section>
             </main>
-
+            
             <div id="footer"></div>
 
             <script>
-                fetch("includes/footer.html")
+                fetch("/includes/footer.html")
                 .then(r => r.text())
                 .then(html => {
                     document.getElementById("footer").innerHTML = html;
                 })
             </script>
         </div>
-
     </body>
 </html>
