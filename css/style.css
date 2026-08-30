@@ -2,7 +2,6 @@
 :root {
   --bg: #0f0f0f;
   --text: #d4cfc9;
-  /*--accent: #3b1c1e;*/
   --accent: #0f5250;
   --header-bg: #1a1a1a;
   --footer-bg: #121212;
@@ -51,6 +50,15 @@ a:hover {
 .logo {
   height: 72px;
   width: auto;
+}
+
+.logo-DGH-fixed {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  padding: 10px;
+  height: 75px;
 }
 
 .title {
@@ -114,11 +122,28 @@ a:hover {
   margin-bottom: 2rem;
 }
 
+.img-accueil {
+  display:flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 0;
+}
+
+.img-title {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
 .intro-box {
   border: 1px solid #0f5250;
   padding: 20px;
   border-radius: 8px;
   display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .btn {
