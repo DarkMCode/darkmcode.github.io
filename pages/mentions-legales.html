@@ -4,24 +4,21 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Mentions légales – DARKMCODE</title>
-		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="/css/style.css">
 	</head>
 
 	<body>
 		<div class="wrapper">
-			<header class="header">
-				<a href="https://darkmcode.github.io" class="branding">
-					<img src="../assets/logos/logo_bleu_name.png" alt="Logo DARKMCODE" class="logo">
-					<span class="title">DARKMCODE</span>
-				</a>
-				<nav class="nav">
-					<a href="/index.html">Accueil</a>
-					<a href="services.html">Services</a>
-					<a href="portfolio.html">Portfolio</a>
-					<a href="contact.html">Contact</a>
-                    <a href="mentions-legales.html" class="nav-active">Mentions légales</a>
-				</nav>
-			</header>
+            <header id="header" class="header"></header>
+
+            <script src="/js/header.js"></script>
+
+            <script>
+                document.addEventListener("headerLoaded", () => {
+                    const index = document.getElementById("mentions-legales");
+                    index.classList.add("nav-active");
+                });
+            </script>
 			
 			<main>
 				<section>
@@ -39,13 +36,7 @@
 			
             <div id="footer"></div>
 
-            <script>
-                fetch("/includes/footer.html")
-                .then(r => r.text())
-                .then(html => {
-                    document.getElementById("footer").innerHTML = html;
-                })
-            </script>
+            <script src="/js/footer.js"></script>
 		</div>
 	</body>
 </html>
