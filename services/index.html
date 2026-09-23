@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Services – DARKMCODE</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="icon" type="image/png" href="/assets/ico/ico.png">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header id="header" class="header"></header>
+
+            <script src="/js/header.js"></script>
+
+            <script>
+                document.addEventListener("headerLoaded", () => {
+                    const index = document.getElementById("services");
+                    index.classList.add("nav-active");
+                });
+            </script>
+
+            <main>
+                <section>
+                    <h1 class="title">Services proposés</h1>
+                    <div class="text spaced">
+                        <p>Analyse statistique et traitement de données complexes</p>
+                        <p>Visualisation graphique de données techniques</p>
+                        <p>Nettoyage, structuration et extraction de données brutes</p>
+                        <p>Cartographie thématique et géospatiale</p>
+                        <p>Production de cartes interactives ou statiques</p>
+                        <p>Intégration de données géographiques (SIG, shapefiles, etc.)</p>
+                        <p>Création de rapports visuels en PDF ou HTML pour publications ou livrables clients</p>
+                        <p>Création de modules Tabletop Simulator scriptés => plus de détails <a href="https://www.tts.darkmcode.com" target="_blank" class="btn">ici</a></p>
+                        <p>Composition de musiques originales, ambiances sonores sur mesure et sound design créatif => lien officiel 
+                            <a href="https://www.darkgh.darkmcode.com" target="_blank" class="btn">
+                                <img src="/assets/logos/DarkGH/Dark G.H. noir.png" alt="Icône" width="100">
+                            </a>
+                        </p>
+                    </div>
+                </section>
+            </main>
+            
+            <div id="footer"></div>
+
+            <script src="/js/footer.js"></script>
+        </div>
+    </body>
+</html>
